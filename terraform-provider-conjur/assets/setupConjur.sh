@@ -1,5 +1,5 @@
 #!/bin/bash
-curl -o docker-compose.yml https://quincycheng.github.io/docker-compose.quickstart.yml
+git clone https://github.com/korisomasekhar/conjur-quickstart.git
 docker-compose pull
 docker-compose run --no-deps --rm conjur data-key generate > data_key
 export CONJUR_DATA_KEY="$(< data_key)"
